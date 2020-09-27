@@ -33,7 +33,7 @@ void Move();
 void Paint();
 bool IsChange = true;
 
-int main() {d
+int main() {
 	initgraph(Width, Height);
 	srand((unsigned int)time(0));
 
@@ -184,7 +184,7 @@ DWORD WINAPI ThreadProc(LPVOID lParam)
 			if (direct == 1)
 				break;
 			direct = 0;
-			IsChange = false;               // avoid fast change direction from e.g. -> and up smaller than the speed 100 while snake goes down, and directly change direction
+			IsChange = false;               // avoid fast change direction from e.g. right and up smaller than the speed 100 while snake goes down, and directly change direction
 			break;
 		case'S':
 		case's':
